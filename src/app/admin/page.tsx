@@ -42,10 +42,10 @@ export default function AdminPage() {
   }, []);
 
   const login = () => {
-    if (pw === "boostupadmin123" || pw === "admin123") {
+    if (pw === "Dikoalam03" || pw === "Dikoalam03") {
       localStorage.setItem("boostup_admin_auth","ok");
       setAuthed(true);
-    } else alert("Wrong password. Try: boostupadmin123");
+    } else alert("Wrong password. Admin Only.");
   };
 
   const fetchAll = async () => {
