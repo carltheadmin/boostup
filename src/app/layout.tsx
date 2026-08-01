@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
 import CartDrawer from "@/components/CartDrawer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "BoostUp PH | Fast, Affordable & Trusted Social Media Boosting",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <main className="min-h-[70vh]">{children}</main>
           <Footer />
         </CartProvider>
+        <Analytics />
       </body>
     </html>
   );
